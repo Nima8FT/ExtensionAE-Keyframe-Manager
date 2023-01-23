@@ -54,16 +54,16 @@ MAHWAY = COMPANY
                     <Type>Modeless</Type>
                     <Geometry>
                         <Size>
-                            <Height>440</Height>
-                            <Width>450</Width>
+                            <Height>380</Height>
+                            <Width>630</Width>
                         </Size>
                         <MaxSize>
                             <Height>900</Height>
                             <Width>900</Width>
                         </MaxSize>
                         <MinSize>
-                            <Height>10</Height>
-                            <Width>10</Width>
+                            <Height>380</Height>
+                            <Width>630</Width>
                         </MinSize>
                     </Geometry>
                 </UI>
@@ -89,16 +89,16 @@ MAHWAY = COMPANY
                     <Menu>Keyframe Manager</Menu>
                     <Geometry>
                         <Size>
-                            <Height>52</Height>
-                            <Width>150</Width>
+                            <Height>380</Height>
+                            <Width>630</Width>
                         </Size>
                         <MaxSize>
                             <Height>900</Height>
                             <Width>900</Width>
                         </MaxSize>
                         <MinSize>
-                            <Height>52</Height>
-                            <Width>150</Width>
+                            <Height>380</Height>
+                            <Width>630</Width>
                         </MinSize>
                     </Geometry>
                     <Icons>
