@@ -1229,12 +1229,16 @@ a:hover {
 
 .Apply_setting {
   width: 60%;
-  background: #198754;
+  /* background: #000000;
+   */
+   border: 1px solid #0AA9CD !important;
+   background: none;
 }
 
 .Cancel_setting {
   width: 35%;
-  background: #dc3545;
+  background: none;
+  border: 1px solid #8a5c5c !important;
 }
 
 .Btn_Setting>button:hover {

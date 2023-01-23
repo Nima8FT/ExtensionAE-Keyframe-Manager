@@ -26,8 +26,8 @@
         <div class="Header__Left">
 
             <div class="Select_layer" title="Layer Name">
-                <span class="Index">#1 </span>
-                <p class="Name_Layer">Selectd Layer</p>
+                <span class="Index">#3</span>
+                <p class="Name_Layer">Test 1</p>
             </div>
 
             <div class="Transform_Key">
@@ -37,28 +37,28 @@
                     <img src="./lib/img/Menu.png" class="Menu__Down__Close Transform__Key__Arrow">
                 </div>
 
-                <div class="Transform__Key__Menu" title="Layer Property Menu">
+                <div class="Transform__Key__Menu" title="Layer Property Menu" style="display: none;">
                     <a id="btn_Anchor">Anchor Point</a>
                     <a id="btn_Position">Position</a>
                     <a id="btn_Scale">Scale</a>
-                    <a id="btn_Rotation">Rotation</a>
-                    <a id="btn_Oriention">Oriention</a>
-                    <a id="btn_RotationX">X Rotation</a>
-                    <a id="btn_RotationY">Y Rotation</a>
-                    <a id="btn_RotationZ">Z Rotation</a>
+                    <a id="btn_Rotation" style="display: block;">Rotation</a>
+                    <a id="btn_Oriention" style="display: none;">Oriention</a>
+                    <a id="btn_RotationX" style="display: none;">X Rotation</a>
+                    <a id="btn_RotationY" style="display: none;">Y Rotation</a>
+                    <a id="btn_RotationZ" style="display: none;">Z Rotation</a>
                     <a id="btn_Opacity">Opacity</a>
                 </div>
             </div>
 
-            <div class="Cubes" title="3D Object">
-                <img src="./lib/img/3D.png" class="Cube" alt="3D">
+            <div class="Cubes" title="3D Object" style="background: rgb(47, 47, 47); display: flex;">
+                <img src="./lib/img/3D.png" class="Cube" alt="3D" style="opacity: 1;">
             </div>
 
         </div>
 
         <div class="Header__Center">
 
-            <div class="SerRep">
+            <div class="SerRep" style="display: flex;">
 
                 <div class="btn__Search">
                     <a class="icon_Replace" title="Change Replace"><img src="./lib/img/Replace-1.png" alt=""></a>
@@ -68,7 +68,7 @@
                         <a class="Change_Search" title="Item Search">Ease</a>
                         <img src="./lib/img/Menu.png" class="Menu__Down__Close Menu_Search_Arrow">
 
-                        <div class="btn__Search__Menu">
+                        <div class="btn__Search__Menu" style="display: none;">
                             <a class="Item_Search_Value">Value</a>
                             <a class="Item_Search_Speed">Speed</a>
                             <a class="Item_Search_Ease">Ease</a>
@@ -84,7 +84,7 @@
                         <a class="Change_Replace" title="Item Replace">Ease</a>
                         <img src="./lib/img/Menu.png" class="Menu__Down__Close Menu_Search_Arrow">
 
-                        <div class="btn__Search__Menu">
+                        <div class="btn__Search__Menu" style="display: none;">
                             <a class="Item_Search_Value">Value</a>
                             <a class="Item_Search_Speed">Speed</a>
                             <a class="Item_Search_Ease">Ease</a>
@@ -98,7 +98,7 @@
 
         <div class="Header__Right">
 
-            <a class="TimeLine" title="TimeLine"><img src="./lib/img/TimeLine.png" class="TimeLines"></a>
+            <a class="TimeLine" title="TimeLine"><img src="./lib/img/TimeLine.png" class="TimeLines" style="opacity: 0.5; background: rgb(24, 24, 24);"></a>
 
             <a class="Refresh" title="Refresh"><img src="./lib/img/Refresh.png" class="Refreshs"></a>
 
@@ -127,13 +127,13 @@
             <div class="Main_Type" title="Type Key">
                 <p>Type</p>
             </div>
-            <div class="Main_Time" title="Time Key">
+            <div class="Main_Time" title="Time Key" style="display: none;">
                 <p>Time</p>
             </div>
-            <div class="Main_SPK" title="Space Key Frame">
+            <div class="Main_SPK" title="Space Key Frame" style="display: none;">
                 <p>SPK</p>
             </div>
-            <div class="Main_Amount" title="Value Key">
+            <div class="Main_Amount" title="Value Key" style="display: none;">
                 <p>Amount</p>
             </div>
             <div class="Main_Ease" title="Ease Key">
@@ -148,9 +148,7 @@
             <div title="Delete" class="Main_Del"><a><img src="./lib/img/Del.png" class="ExitAll" alt=""></a></div>
         </div>
 
-        <div class="Items">
-
-        </div>
+        <div class="Items"><div class="Item-1  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index1" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">1</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Bezier.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB" class="menu_Selected">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;00;00"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="0" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="10" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="997"><span style="color: #ffffff;">,</span><input class="Input_Position" value="489"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 1;"><input class="Input_Ease uio" value="33"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="29"></div><div title="Speed Key" class="div_Speed" style="opacity: 1;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(1)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index2" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">2</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Bezier.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB" class="menu_Selected">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;00;10"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="10" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="11" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="979"><span style="color: #ffffff;">,</span><input class="Input_Position" value="514"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 1;"><input class="Input_Ease uio" value="16"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="16"></div><div title="Speed Key" class="div_Speed" style="opacity: 1;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(2)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item-1  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index3" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">3</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Bezier.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB" class="menu_Selected">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;00;21"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="11" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="9" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="991"><span style="color: #ffffff;">,</span><input class="Input_Position" value="498"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 1;"><input class="Input_Ease uio" value="16"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="16"></div><div title="Speed Key" class="div_Speed" style="opacity: 1;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(3)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index4" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">4</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Bezier.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB" class="menu_Selected">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;01;00"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="9" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="6" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="997"><span style="color: #ffffff;">,</span><input class="Input_Position" value="489"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 1;"><input class="Input_Ease uio" value="33"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="32"></div><div title="Speed Key" class="div_Speed" style="opacity: 1;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(4)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item-1  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index5" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">5</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Linear.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear" class="menu_Selected">Linear</a><a id="EaseB">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;01;06"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="6" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="14" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="960"><span style="color: #ffffff;">,</span><input class="Input_Position" value="540"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 0.4;"><input class="Input_Ease uio" value="0" readonly=""><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="0" readonly=""></div><div title="Speed Key" class="div_Speed" style="opacity: 0.4;"><input class="Input_Speed uio" value="313" readonly=""><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="71" readonly=""></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(5)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index6" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">6</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Bezier.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB" class="menu_Selected">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;01;20"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="14" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="16" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="978"><span style="color: #ffffff;">,</span><input class="Input_Position" value="515"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 1;"><input class="Input_Ease uio" value="38"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="88"></div><div title="Speed Key" class="div_Speed" style="opacity: 1;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(6)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item-1  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index7" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">7</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Linear.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear" class="menu_Selected">Linear</a><a id="EaseB">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;02;06"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="16" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="19" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="978"><span style="color: #ffffff;">,</span><input class="Input_Position" value="515"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 0.4;"><input class="Input_Ease uio" value="0" readonly=""><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="0" readonly=""></div><div title="Speed Key" class="div_Speed" style="opacity: 0.4;"><input class="Input_Speed uio" value="0" readonly=""><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0" readonly=""></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(7)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index8" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">8</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Bezier.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB" class="menu_Selected">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;02;25"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="19" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="8" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="978"><span style="color: #ffffff;">,</span><input class="Input_Position" value="515"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 1;"><input class="Input_Ease uio" value="33"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="33"></div><div title="Speed Key" class="div_Speed" style="opacity: 1;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(8)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div><div class="Item-1  rty" onclick="SelectedKeys(this)"><div class="Items_Selected" title="Selected Key"><input id="index9" class="qwe inp-cbx" name="asdd" type="checkbox" style="display: none;"><label class="cbx"><span><svg width="12px" height="9px" viewBox="0 0 12 9"><polyline points="1 5 4 8 11 1"></polyline></svg></span></label><div class="Menu"><div class="MenuSelect"><a class="Select_Before_Key" title="Select Before Key">Before</a><a class="Select_After_Key" title="Select After Key">After</a></div></div></div><div class="Items_Index" title="Index"><p class="Num">9</p></div><div class="head_Keys"><a class="KeySelect"><img src="./lib/img/Hold.png" class="Key" alt=""></a><div class="TypeKey"><a id="Linear">Linear</a><a id="EaseB">Ease</a><a id="EaseIn">EaseIn</a><a id="EaseOut">EaseOut</a><a id="Hold" class="menu_Selected">Hold</a></div></div><div class="Items_Time" title="Time Key" style="display: none;"><input class="Input_Time" value="00;03;03"></div><div class="div_SpaceAll" title="Space Key Frame" style="display: none;"><input class="Input_SpaceBefore" value="8" readonly=""><span style="color: #afafaf;">/</span><input class="Input_SpaceAfter" value="0" readonly=""></div><div class="Items_Amount" title="Value Key" style="display: none;"><div class="div_Input"><input class="Input_Position" value="978"><span style="color: #ffffff;">,</span><input class="Input_Position" value="515"><span style="color: rgb(255, 255, 255); display: none;" class="none">,</span><input class="Input_Position none" value="0" style="display: none;"></div></div><div title="Ease Key" class="div_Keys" style="opacity: 0.4;"><input class="Input_Ease uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Ease jlk" value="0"></div><div title="Speed Key" class="div_Speed" style="opacity: 0.4;"><input class="Input_Speed uio" value="0"><span style="color: #e9e9e9;">/</span><input class="Input_Speed jlk" value="0"></div><div class="Items_Move" title="Move Key Up Or Down"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Up_Layer"><img src="./lib/img/Menu.png" class="Menu__Down__Close Go_Down_Layer"></div><div class="Items_Del"><a title="Delete" class="Exit" onclick="KeyDelete(9)"><img src="./lib/img/Del.png" class="Exit" alt=""></a></div></div></div>
 
     </article>
 
@@ -159,7 +157,7 @@
         <div class="Copy">
             <a class="CopyAll" title="Copy Key">
                 Copy
-                <span class="Num_Copy">0</span>
+                <span class="Num_Copy">1</span>
             </a>
 
         </div>
@@ -178,14 +176,14 @@
 
         <div class="Default__Ease">
             <a title="Set Ease">
-                <span id="Default__Ease__1_0">/</span>
+                <span id="Default__Ease__1_0">60/50</span>
                 <img class="Menu__Down__Close" src="./lib/img/Menu.png" alt="">
             </a>
 
-            <div class="Default__Ease__All">
-                <a id="Default__Ease__1_1">/</a>
+            <div class="Default__Ease__All" style="display: none;">
+                <a id="Default__Ease__1_1">60/50</a>
                 <a id="Default__Ease__2">85/75</a>
-                <a id="Default__Ease__3">40/88</a>
+                <a id="Default__Ease__3" class="menu_Selected">40/88</a>
                 <a id="Default__Ease__4">85/85</a>
                 <a id="Default__Ease__5">100/100</a>
             </div>
@@ -265,7 +263,7 @@
                     <div class="List_Main_Setting">
 
                         <div class="Time">
-                            <input class="inp-cbx inp_setting" id="Time" type="checkbox" checked="checked" isnone="true">
+                            <input class="inp-cbx inp_setting" id="Time" type="checkbox" checked="checked" isnone="false">
                             <label class="cbx_setting" for="Time"><span>
                                     <svg width="12px" height="10px">
                                         <use xlink:href="#check"></use>
@@ -278,7 +276,7 @@
                         </div>
 
                         <div class="Value">
-                            <input class="inp-cbx inp_setting" id="Value" type="checkbox" checked="checked" isnone="true">
+                            <input class="inp-cbx inp_setting" id="Value" type="checkbox" checked="checked" isnone="false">
                             <label class="cbx_setting" for="Value"><span>
                                     <svg width="12px" height="10px">
                                         <use xlink:href="#check"></use>
@@ -291,7 +289,7 @@
                         </div>
 
                         <div class="Space_Time">
-                            <input class="inp-cbx inp_setting" id="Space_Time" type="checkbox" checked="checked" isnone="true">
+                            <input class="inp-cbx inp_setting" id="Space_Time" type="checkbox" checked="checked" isnone="false">
                             <label class="cbx_setting" for="Space_Time"><span>
                                     <svg width="12px" height="10px">
                                         <use xlink:href="#check"></use>
