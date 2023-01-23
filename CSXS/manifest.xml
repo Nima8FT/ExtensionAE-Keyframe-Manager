@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+* Copyright 2014 Adobe
+* All Rights Reserved.
+*
+* NOTICE: Adobe permits you to use, modify, and distribute this file in
+* accordance with the terms of the Adobe license agreement accompanying
+* it. If you have received this file from a source other than Adobe,
+* then your use, modification, or distribution of it requires the prior
+* written permission of Adobe. 
+**************************************************************************/
+Keyframe Manager = Name Project
+KeyframeManager = nameproject
+MAHWAY = COMPANY
+-->
+
+<ExtensionManifest Version="9.0" ExtensionBundleId="com.MAHWAY.KeyframeManager" ExtensionBundleVersion="1.0" ExtensionBundleName="Keyframe Manager"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ExtensionList>
+        <Extension Id="com.aescripts.KeyframeManager.about" Version="2.0.024" />
+        <Extension Id="com.MAHWAY.KeyframeManager.Index" Version="1.0"/>
+        <Extension Id="com.MAHWAY.KeyframeManager.Setting" Version="1.0"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="AEFT" Version="[15.0,99.9]"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="9.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.aescripts.KeyframeManager.about">
+            <DispatchInfo >
+                <Resources>
+                    <MainPath>./dialog/dialog.html</MainPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--allow-file-access-from-files</Parameter>
+                        <Parameter>--allow-file-access</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Modeless</Type>
+                    <Geometry>
+                        <Size>
+                            <Height>440</Height>
+                            <Width>450</Width>
+                        </Size>
+                        <MaxSize>
+                            <Height>900</Height>
+                            <Width>900</Width>
+                        </MaxSize>
+                        <MinSize>
+                            <Height>10</Height>
+                            <Width>10</Width>
+                        </MinSize>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+        <Extension Id="com.MAHWAY.KeyframeManager.Index">
+            <DispatchInfo >
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./lib/jsx/Main.jsx</ScriptPath>
+                    <ScriptPath>./lib/jsx/Main.jsxbin</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--allow-file-access</Parameter>
+                        <Parameter>--allow-file-access-from-files</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Modeless</Type>
+                    <Menu>Keyframe Manager</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>52</Height>
+                            <Width>150</Width>
+                        </Size>
+                        <MaxSize>
+                            <Height>900</Height>
+                            <Width>900</Width>
+                        </MaxSize>
+                        <MinSize>
+                            <Height>52</Height>
+                            <Width>150</Width>
+                        </MinSize>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./img/like1.png</Icon>
+                        <Icon Type="RollOver">./img/like1.png</Icon>
+                        <Icon Type="DarkNormal">./img/like1.png</Icon>
+                        <Icon Type="DarkRollOver">./img/like1.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
