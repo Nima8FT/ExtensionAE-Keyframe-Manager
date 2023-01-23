@@ -173,17 +173,17 @@
             </div> -->
             <a class="Paste_Speed" title="Paste Speed">Ease+</a>
             <a class="Paste_All" title="Paste All">All</a>
-            <a class="Paste_Key" title="Paste Key">Key</a>
+            <!-- <a class="Paste_Key" title="Paste Key">Key</a> -->
         </div>
 
         <div class="Default__Ease">
             <a title="Set Ease">
-                <span>50/50</span>
+                <span id="Default__Ease__1_0">/</span>
                 <img class="Menu__Down__Close" src="./lib/img/Menu.png" alt="">
             </a>
 
             <div class="Default__Ease__All">
-                <a id="Default__Ease__1">50/50</a>
+                <a id="Default__Ease__1_1">/</a>
                 <a id="Default__Ease__2">85/75</a>
                 <a id="Default__Ease__3">40/88</a>
                 <a id="Default__Ease__4">85/85</a>
@@ -210,32 +210,23 @@
     </article>
 
 
-    <article class="Setting_Panel"> 
+    <article class="Setting_Panel" style="display: flex;"> 
 
         <div class="Head_Setting" style="display: flex;">
             <form>
                 <fieldset>
 
                     <legend>
-                        <input class="inp-cbx inp_setting" id="Head_Setting" type="checkbox">
-                        <label class="cbx_setting" for="Head_Setting"><span>
-                                <svg width="12px" height="10px">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                </svg></span><span class="style_Heading">Head Setting</span></label>
-                        <svg class="inline-svg">
-                            <symbol id="check" viewBox="0 0 12 10">
-                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                            </symbol>
-                        </svg>
+                        <p class="style_Heading">Head Setting</p>
                     </legend>
 
                     <div class="List_Head_Setting">
 
                         <div class="ThreeD">
-                            <input class="inp-cbx inp_setting" id="ThreeD" type="checkbox" enabld="">
+                            <input class="inp-cbx inp_setting" id="ThreeD" type="checkbox" enabld="" checked="checked" isnone="true">
                             <label class="cbx_setting" for="ThreeD"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>3D</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -245,24 +236,11 @@
                         </div>
 
                         <div class="Search">
-                            <input class="inp-cbx inp_setting" id="Search" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="Search" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Search"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                    </svg></span><span>Search</span></label>
-                            <svg class="inline-svg">
-                                <symbol id="check" viewBox="0 0 12 10">
-                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                </symbol>
-                            </svg>
-                        </div>
-
-                        <div class="Replace">
-                            <input class="inp-cbx inp_setting" id="Replace" type="checkbox">
-                            <label class="cbx_setting" for="Replace"><span>
-                                    <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                    </svg></span><span>Replace</span></label>
+                                        <use xlink:href="#check"></use>
+                                    </svg></span><span>Search/Replace</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
                                     <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -281,25 +259,16 @@
                 <fieldset>
 
                     <legend>
-                        <input class="inp-cbx inp_setting" id="Row_Keyframe" type="checkbox">
-                        <label class="cbx_setting" for="Row_Keyframe"><span>
-                                <svg width="12px" height="10px">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                </svg></span><span class="style_Heading">Row Keyframe</span></label>
-                        <svg class="inline-svg">
-                            <symbol id="check" viewBox="0 0 12 10">
-                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                            </symbol>
-                        </svg>
+                        <p class="style_Heading">Row Keyframes</p>
                     </legend>
 
                     <div class="List_Main_Setting">
 
                         <div class="Time">
-                            <input class="inp-cbx inp_setting" id="Time" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="Time" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Time"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Time</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -309,10 +278,10 @@
                         </div>
 
                         <div class="Value">
-                            <input class="inp-cbx inp_setting" id="Value" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="Value" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Value"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Value</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -322,10 +291,10 @@
                         </div>
 
                         <div class="Space_Time">
-                            <input class="inp-cbx inp_setting" id="Space_Time" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="Space_Time" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Space_Time"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Space Time</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -339,10 +308,10 @@
                     <div class="List_Main_Setting">
 
                         <div class="Ease">
-                            <input class="inp-cbx inp_setting" id="Ease" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="Ease" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Ease"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Ease</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -352,10 +321,10 @@
                         </div>
 
                         <div class="Speed">
-                            <input class="inp-cbx inp_setting" id="Speed" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="Speed" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Speed"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Speed</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -365,10 +334,10 @@
                         </div>
 
                         <div class="KeyMove">
-                            <input class="inp-cbx inp_setting" id="KeyMove" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="KeyMove" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="KeyMove"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Key Move</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -388,25 +357,16 @@
                 <fieldset>
 
                     <legend>
-                        <input class="inp-cbx inp_setting" id="ToolsKeyframe" type="checkbox">
-                        <label class="cbx_setting" for="ToolsKeyframe"><span>
-                                <svg width="12px" height="10px">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                </svg></span><span class="style_Heading">Tools Keyframe</span></label>
-                        <svg class="inline-svg">
-                            <symbol id="check" viewBox="0 0 12 10">
-                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                            </symbol>
-                        </svg>
+                        <p class="style_Heading">Tools Keyframe</p>
                     </legend>
 
                     <div class="List_Foot_Setting">
 
                         <div class="CreateKey">
-                            <input class="inp-cbx inp_setting" id="CreateKey" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="CreateKey" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="CreateKey"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Create Key</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -416,10 +376,10 @@
                         </div>
 
                         <div class="Frame">
-                            <input class="inp-cbx inp_setting" id="Frame_Prev/Next" type="checkbox">
-                            <label class="cbx_setting" for="Frame_Prev/Next"><span>
+                            <input class="inp-cbx inp_setting" id="Main_Move" type="checkbox" checked="checked" isnone="true">
+                            <label class="cbx_setting" for="Main_Move"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Frame Prev/Next</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -429,10 +389,10 @@
                         </div>
 
                         <div class="DefaultEase">
-                            <input class="inp-cbx inp_setting" id="DefaultEase" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="DefaultEase" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="DefaultEase"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Default Ease</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -449,11 +409,11 @@
 
                     <div class="List_Foot_Setting">
 
-                        <div class="Copy copy_setting">
-                            <input class="inp-cbx inp_setting" id="Copy" type="checkbox">
+                        <div class="copy_setting">
+                            <input class="inp-cbx inp_setting" id="Copy" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="Copy"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Copy</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -463,10 +423,10 @@
                         </div>
 
                         <div class="PasteValue">
-                            <input class="inp-cbx inp_setting" id="PasteValue" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="PasteValue" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="PasteValue"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Paste Value</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -476,10 +436,10 @@
                         </div>
 
                         <div class="PasteEase">
-                            <input class="inp-cbx inp_setting" id="PasteEase" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="PasteEase" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="PasteEase"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Paste Ease</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
@@ -493,11 +453,11 @@
                     <div class="List_Foot_Setting">
 
                         <div class="PasteSpeed">
-                            <input class="inp-cbx inp_setting" id="PasteSpeed" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="PasteSpeed" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="PasteSpeed"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                    </svg></span><span>Paste Speed</span></label>
+                                        <use xlink:href="#check"></use>
+                                    </svg></span><span>Paste Ease+</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
                                     <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -506,24 +466,11 @@
                         </div>
 
                         <div class="PasteAll">
-                            <input class="inp-cbx inp_setting" id="PasteAll" type="checkbox">
+                            <input class="inp-cbx inp_setting" id="PasteAll" type="checkbox" checked="checked" isnone="true">
                             <label class="cbx_setting" for="PasteAll"><span>
                                     <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
+                                        <use xlink:href="#check"></use>
                                     </svg></span><span>Paste All</span></label>
-                            <svg class="inline-svg">
-                                <symbol id="check" viewBox="0 0 12 10">
-                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                </symbol>
-                            </svg>
-                        </div>
-
-                        <div class="PasteKey">
-                            <input class="inp-cbx inp_setting" id="PasteKey" type="checkbox">
-                            <label class="cbx_setting" for="PasteKey"><span>
-                                    <svg width="12px" height="10px">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check"></use>
-                                    </svg></span><span>Paste Key</span></label>
                             <svg class="inline-svg">
                                 <symbol id="check" viewBox="0 0 12 10">
                                     <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -548,39 +495,44 @@
 
                     <div class="Default_Ease_setting">
                         <div>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_1_1" class="inp_setting_ease" type="text" value="50">
                             <span>/</span>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_1_2" class="inp_setting_ease" type="text" value="50">
                         </div>
 
                         <div>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_2_1" class="inp_setting_ease" type="text" value="50">
                             <span>/</span>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_2_2" class="inp_setting_ease" type="text" value="50">
                         </div>
 
                         <div>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_3_1" class="inp_setting_ease" type="text" value="50">
                             <span>/</span>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_3_2" class="inp_setting_ease" type="text" value="50">
                         </div>
 
                         <div>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_4_1" class="inp_setting_ease" type="text" value="50">
                             <span>/</span>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_4_2" class="inp_setting_ease" type="text" value="50">
                         </div>
 
                         <div>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_5_1" class="inp_setting_ease" type="text" value="50">
                             <span>/</span>
-                            <input class="inp_setting_ease" type="text" value="50">
+                            <input id="S_Ease_5_2" class="inp_setting_ease" type="text" value="50">
                         </div>
                     </div>
 
 
                 </fieldset>
             </form>
+        </div>
+
+        <div class="Btn_Setting" style="display: flex;">
+            <button type="button" class="Apply_setting">Apply</button>
+            <button type="button" class="Cancel_setting">Cancel</button>
         </div>
 
     </article>

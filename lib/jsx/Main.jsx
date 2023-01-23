@@ -95,6 +95,7 @@ function Search_Replace(Layer, ItemSearch, val, isSearch, index) {
          var FitSearch = val.split(',');
          var FPS = app.project.activeItem.frameRate;
 
+
          function Item_Search(e, mode) {
             switch (e) {
                case "Speed":
@@ -171,9 +172,9 @@ function Search_Replace(Layer, ItemSearch, val, isSearch, index) {
                            }
                         }
                      }
-                     break;
-
                   }
+                  break;
+
             }
          }
 
@@ -261,7 +262,7 @@ function Search_Replace(Layer, ItemSearch, val, isSearch, index) {
       }
 
       return Index.toString();
-      
+
    } catch (error) {
 
    }

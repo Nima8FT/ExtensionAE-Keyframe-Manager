@@ -62,8 +62,8 @@ MAHWAY = COMPANY
                             <Width>900</Width>
                         </MaxSize>
                         <MinSize>
-                            <Height>380</Height>
-                            <Width>630</Width>
+                            <Height>100</Height>
+                            <Width>100</Width>
                         </MinSize>
                     </Geometry>
                 </UI>
@@ -97,8 +97,8 @@ MAHWAY = COMPANY
                             <Width>900</Width>
                         </MaxSize>
                         <MinSize>
-                            <Height>380</Height>
-                            <Width>630</Width>
+                            <Height>100</Height>
+                            <Width>100</Width>
                         </MinSize>
                     </Geometry>
                     <Icons>
