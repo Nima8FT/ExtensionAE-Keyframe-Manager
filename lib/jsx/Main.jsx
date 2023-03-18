@@ -8,6 +8,7 @@ function GetOS() {
    }
 }
 
+
 function Index_Name() {
    try {
       var Layer = app.project.activeItem.selectedLayers[0];
