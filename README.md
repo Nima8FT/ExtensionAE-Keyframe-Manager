@@ -53,7 +53,7 @@ For more information, watch the demo video or visit the official [Product Page o
 
 To learn how to install and use Keyframe Manager, please visit the official [Product Page on AEScripts](https://aescripts.com/keyframe-manager/?srsltid=AfmBOor7Ocr9R4_z1UzjVotWdlaBfhls6TATy_ElK6y7IlvAIbTCtEHX) and watch the demo movie available there.
 
-[Watch the Demo Movie to Learn How to Use Keyframe Manager]([https://aescripts.com/keyframe-manager/](https://youtu.be/KL8Tz1xGh70))
+[Watch the Demo Movie to Learn How to Use Keyframe Manager](https://youtu.be/KL8Tz1xGh70)
 
 ---
 
