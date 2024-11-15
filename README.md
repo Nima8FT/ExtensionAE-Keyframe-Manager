@@ -9,13 +9,13 @@
 Version: [1.0.0]
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Installation and Usage](#installation-and-usage)
-4. [Compatibility](#compatibility)
-5. [Contributing](#contributing)
-6. [Support and Issues](#support-and-issues)
-7. [Demo GIFs](#demo-gifs)
+1. [Overview](#1-overview)
+2. [Features](#2-features)
+3. [Installation and Usage](#3-installation-and-usage)
+4. [Compatibility](#4-compatibility)
+5. [Contributing](#5-contributing)
+6. [Support and Issues](#6-support-and-issues)
+7. [Demo GIFs](#7-demo-gifs)
 
 ---
 
