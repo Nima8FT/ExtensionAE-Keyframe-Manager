@@ -30,18 +30,19 @@ Keyframe Manager is a powerful extension for Adobe After Effects, designed to en
 Keyframe Manager provides a wide range of features to streamline your animation workflow:
 
 - **Change Any Keyframe Value**: Easily modify the value of any keyframe in your timeline to adjust your animation parameters.
-- 
+
 - **Change Easing Types**: Switch between different easing functions to control the speed and timing of keyframe transitions.
-- 
+
 - **Search and Replace Any Value**: Quickly find and replace keyframe values across your animation to make batch updates or adjustments.
-- 
+
 - **Change Order Visually**: Reorganize keyframes by dragging and dropping them, allowing for more intuitive animation edits.
-- 
+
 - **Shift Keys by Defined Amounts**: Move keyframes by specific time intervals or values, ensuring precise control over your animation timing.
-- 
+
 - **Copy and Paste Any Values**: Copy keyframe values and paste them onto different frames or properties for consistent animation effects.
-- 
+
 - **Save and Apply Easing Favorites**: Save your preferred easing types and quickly apply them to any keyframe in your animation, speeding up your workflow.
+
 
 For more information, watch the demo video or visit the official [Product Page on AEScripts](https://aescripts.com/keyframe-manager/).
 
@@ -87,20 +88,21 @@ If you encounter any issues or need help, please:
 Here are some demo GIFs showing how Keyframe Manager works:
 
 1. **UI of Keyframe Manager**  
-   ![UI of Keyframe Manager](https://aescripts.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/img1.png)  
-   <br>
+   
+   ![UI of Keyframe Manager](https://aescripts.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/img1.png)
 
 3. **Change Easing Types**  
-   ![Change Easing Types](https://aescripts.com/media/catalog/product/1/_/1_1_1.gif)  
-   <br>
+   
+   ![Change Easing Types](https://aescripts.com/media/catalog/product/1/_/1_1_1.gif)
 
 4. **Search and Replace Value**  
-   ![Search and Replace Value](https://aescripts.com/media/catalog/product/4/_/4_2.gif)  
-   <br>
+   
+   ![Search and Replace Value](https://aescripts.com/media/catalog/product/4/_/4_2.gif)
 
 5. **Copy and Paste Values**  
-   ![Copy and Paste Values](https://aescripts.com/media/catalog/product/6/_/6_1_1.gif)  
-   <br>
+   
+   ![Copy and Paste Values](https://aescripts.com/media/catalog/product/6/_/6_1_1.gif)
+
 
 
 
